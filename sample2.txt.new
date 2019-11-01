@@ -1,0 +1,74 @@
+------------- show ip route vrf all summary -------------
+
+
+VRF: default
+Route Source                                Number Of Routes
+------------------------------------- -------------------------
+connected                                                190
+static (persistent)                                        0
+static (non-persistent)                                    0
+VXLAN Control Service                                      0
+static nexthop-group                                       0
+ospf                                                       0
+Intra-area: 0 Inter-area: 0 External-1: 0 External-2: 0
+NSSA External-1: 0 NSSA External-2: 0
+ospfv3                                                     0
+bgp                                                    91965
+External: 91965 Internal: 0
+isis                                                       0
+Level-1: 0 Level-2: 0
+rip                                                        0
+internal                                                 194
+attached                                                 190
+aggregate                                                  0
+dynamic policy                                             0
+
+Total Routes                                           92539
+
+Number of routes per mask-length:
+/0: 1         /8: 2         /15: 1        /16: 24       /17: 92
+/18: 113      /19: 132      /20: 163      /21: 728      /22: 1940
+/23: 2466     /24: 13684    /25: 6189     /26: 17443    /27: 12204
+/28: 5301     /29: 11255    /30: 1436     /31: 3659     /32: 15706
+
+
+VRF: MGMT
+Route Source                                Number Of Routes
+------------------------------------- -------------------------
+connected                                                  1
+static (persistent)                                        1
+static (non-persistent)                                    0
+VXLAN Control Service                                      0
+static nexthop-group                                       0
+ospf                                                       0
+Intra-area: 0 Inter-area: 0 External-1: 0 External-2: 0
+NSSA External-1: 0 NSSA External-2: 0
+ospfv3                                                     0
+bgp                                                        0
+External: 0 Internal: 0
+isis                                                       0
+Level-1: 0 Level-2: 0
+rip                                                        0
+internal                                                   6
+attached                                                   0
+aggregate                                                  0
+dynamic policy                                             0
+
+Total Routes                                               8
+
+Number of routes per mask-length:
+/0: 1         /8: 2         /26: 1        /32: 4
+
+
+------------------------------------------------------------------------------------- 
+
+Count of Non-ECMP routes: 1
+Count of ECMP routes: 102
+Total routes: 103
+
+ 
+ +-------------+-------------+--------------------+
+| Destination | Subnet Mask |     Nexthop IP     |
++-------------+-------------+--------------------+
+|   0.0.0.0   |      8      | directly connected |
++-------------+-------------+--------------------+

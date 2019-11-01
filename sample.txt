@@ -1,0 +1,95 @@
+------------- show ip route vrf all summary -------------
+
+
+VRF: default
+   Route Source                                Number Of Routes
+------------------------------------- -------------------------
+   connected                                                190
+   static (persistent)                                        0
+   static (non-persistent)                                    0
+   VXLAN Control Service                                      0
+   static nexthop-group                                       0
+   ospf                                                       0
+     Intra-area: 0 Inter-area: 0 External-1: 0 External-2: 0
+     NSSA External-1: 0 NSSA External-2: 0
+   ospfv3                                                     0
+   bgp                                                    91965
+     External: 91965 Internal: 0
+   isis                                                       0
+     Level-1: 0 Level-2: 0
+   rip                                                        0
+   internal                                                 194
+   attached                                                 190
+   aggregate                                                  0
+   dynamic policy                                             0
+
+   Total Routes                                           92539
+
+Number of routes per mask-length:
+   /0: 1         /8: 2         /15: 1        /16: 24       /17: 92
+   /18: 113      /19: 132      /20: 163      /21: 728      /22: 1940
+   /23: 2466     /24: 13684    /25: 6189     /26: 17443    /27: 12204
+   /28: 5301     /29: 11255    /30: 1436     /31: 3659     /32: 15706
+
+
+VRF: MGMT
+   Route Source                                Number Of Routes
+------------------------------------- -------------------------
+   connected                                                  1
+   static (persistent)                                        1
+   static (non-persistent)                                    0
+   VXLAN Control Service                                      0
+   static nexthop-group                                       0
+   ospf                                                       0
+     Intra-area: 0 Inter-area: 0 External-1: 0 External-2: 0
+     NSSA External-1: 0 NSSA External-2: 0
+   ospfv3                                                     0
+   bgp                                                        0
+     External: 0 Internal: 0
+   isis                                                       0
+     Level-1: 0 Level-2: 0
+   rip                                                        0
+   internal                                                   6
+   attached                                                   0
+   aggregate                                                  0
+   dynamic policy                                             0
+
+   Total Routes                                               8
+
+Number of routes per mask-length:
+   /0: 1         /8: 2         /26: 1        /32: 4
+
+
+------------- show port numbering -------------
+
+------------- show ip route vrf all detail -------------
+
+
+VRF: default
+Codes: C - connected, S - static, K - kernel,
+       O - OSPF, IA - OSPF inter area, E1 - OSPF external type 1,
+       E2 - OSPF external type 2, N1 - OSPF NSSA external type 1,
+       N2 - OSPF NSSA external type2, B I - iBGP, B E - eBGP,
+       R - RIP, I L1 - IS-IS level 1, I L2 - IS-IS level 2,
+       O3 - OSPFv3, A B - BGP Aggregate, A O - OSPF Summary,
+       NG - Nexthop Group Static Route, V - VXLAN Control Service,
+       DH - DHCP client installed default route, M - Martian,
+       DP - Dynamic Policy Route
+
+Gateway of last resort:
+ B E    0.0.0.0/0 [200/0] via 10.10.144.168, Port-Channel1 MWH01-0100-0200-01RA:Ethernet3/1/1;Ethernet3/2/1;Ethernet3/3/1;Ethernet3/4/1;Ethernet3/5/1;Ethernet3/6/1;Ethernet3/7/1;Ethernet3/8/1;Ethernet3/9/1;Ethernet3/10/1;Ethernet3/11/1;Ethernet3/12/1
+                          via 10.10.148.168, Port-Channel13 MWH01-0100-0200-02RA:Ethernet3/13/1;Ethernet3/14/1;Ethernet3/15/1;Ethernet3/16/1;Ethernet3/17/1;Ethernet3/18/1;Ethernet3/19/1;Ethernet3/20/1;Ethernet3/21/1;Ethernet3/22/1;Ethernet3/23/1;Ethernet3/24/1
+                          via 10.10.152.168, Port-Channel25 MWH01-0100-0200-03RA:Ethernet3/25/1;Ethernet3/26/1;Ethernet3/27/1;Ethernet3/28/1;Ethernet3/29/1;Ethernet3/30/1;Ethernet3/31/1;Ethernet3/32/1;Ethernet3/33/1;Ethernet3/34/1;Ethernet3/35/1;Ethernet3/36/1
+                          via 10.10.156.168, Port-Channel37 MWH01-0100-0200-04RA:Ethernet4/1/1;Ethernet4/2/1;Ethernet4/3/1;Ethernet4/4/1;Ethernet4/5/1;Ethernet4/6/1;Ethernet4/7/1;Ethernet4/8/1;Ethernet4/9/1;Ethernet4/10/1;Ethernet4/11/1;Ethernet4/12/1
+ S      10.100.100.100/32 is directly connected, Null0
+ M      0.0.0.0/8 is directly connected, <Internal>
+ B E    10.0.25.6/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                             via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                             via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                             via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.25.14/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+ C      10.10.120.100/31 is directly connected, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+ C      10.10.120.102/31 is directly connected, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+
+
+------------- show ip route host -------------

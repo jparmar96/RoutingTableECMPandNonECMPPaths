@@ -1,0 +1,508 @@
+------------- show ip route vrf all summary -------------
+
+
+VRF: default
+   Route Source                                Number Of Routes
+------------------------------------- -------------------------
+   connected                                                190
+   static (persistent)                                        0
+   static (non-persistent)                                    0
+   VXLAN Control Service                                      0
+   static nexthop-group                                       0
+   ospf                                                       0
+     Intra-area: 0 Inter-area: 0 External-1: 0 External-2: 0
+     NSSA External-1: 0 NSSA External-2: 0
+   ospfv3                                                     0
+   bgp                                                    91965
+     External: 91965 Internal: 0
+   isis                                                       0
+     Level-1: 0 Level-2: 0
+   rip                                                        0
+   internal                                                 194
+   attached                                                 190
+   aggregate                                                  0
+   dynamic policy                                             0
+
+   Total Routes                                           92539
+
+Number of routes per mask-length:
+   /0: 1         /8: 2         /15: 1        /16: 24       /17: 92
+   /18: 113      /19: 132      /20: 163      /21: 728      /22: 1940
+   /23: 2466     /24: 13684    /25: 6189     /26: 17443    /27: 12204
+   /28: 5301     /29: 11255    /30: 1436     /31: 3659     /32: 15706
+
+
+VRF: MGMT
+   Route Source                                Number Of Routes
+------------------------------------- -------------------------
+   connected                                                  1
+   static (persistent)                                        1
+   static (non-persistent)                                    0
+   VXLAN Control Service                                      0
+   static nexthop-group                                       0
+   ospf                                                       0
+     Intra-area: 0 Inter-area: 0 External-1: 0 External-2: 0
+     NSSA External-1: 0 NSSA External-2: 0
+   ospfv3                                                     0
+   bgp                                                        0
+     External: 0 Internal: 0
+   isis                                                       0
+     Level-1: 0 Level-2: 0
+   rip                                                        0
+   internal                                                   6
+   attached                                                   0
+   aggregate                                                  0
+   dynamic policy                                             0
+
+   Total Routes                                               8
+
+Number of routes per mask-length:
+   /0: 1         /8: 2         /26: 1        /32: 4
+
+
+------------- show port numbering -------------
+
+------------- show ip route vrf all detail -------------
+
+
+VRF: default
+Codes: C - connected, S - static, K - kernel,
+       O - OSPF, IA - OSPF inter area, E1 - OSPF external type 1,
+       E2 - OSPF external type 2, N1 - OSPF NSSA external type 1,
+       N2 - OSPF NSSA external type2, B I - iBGP, B E - eBGP,
+       R - RIP, I L1 - IS-IS level 1, I L2 - IS-IS level 2,
+       O3 - OSPFv3, A B - BGP Aggregate, A O - OSPF Summary,
+       NG - Nexthop Group Static Route, V - VXLAN Control Service,
+       DH - DHCP client installed default route, M - Martian,
+       DP - Dynamic Policy Route
+
+Gateway of last resort:
+ B E    0.0.0.0/0 [200/0] via 10.10.144.168, Port-Channel1 MWH01-0100-0200-01RA:Ethernet3/1/1;Ethernet3/2/1;Ethernet3/3/1;Ethernet3/4/1;Ethernet3/5/1;Ethernet3/6/1;Ethernet3/7/1;Ethernet3/8/1;Ethernet3/9/1;Ethernet3/10/1;Ethernet3/11/1;Ethernet3/12/1
+                          via 10.10.148.168, Port-Channel13 MWH01-0100-0200-02RA:Ethernet3/13/1;Ethernet3/14/1;Ethernet3/15/1;Ethernet3/16/1;Ethernet3/17/1;Ethernet3/18/1;Ethernet3/19/1;Ethernet3/20/1;Ethernet3/21/1;Ethernet3/22/1;Ethernet3/23/1;Ethernet3/24/1
+                          via 10.10.152.168, Port-Channel25 MWH01-0100-0200-03RA:Ethernet3/25/1;Ethernet3/26/1;Ethernet3/27/1;Ethernet3/28/1;Ethernet3/29/1;Ethernet3/30/1;Ethernet3/31/1;Ethernet3/32/1;Ethernet3/33/1;Ethernet3/34/1;Ethernet3/35/1;Ethernet3/36/1
+                          via 10.10.156.168, Port-Channel37 MWH01-0100-0200-04RA:Ethernet4/1/1;Ethernet4/2/1;Ethernet4/3/1;Ethernet4/4/1;Ethernet4/5/1;Ethernet4/6/1;Ethernet4/7/1;Ethernet4/8/1;Ethernet4/9/1;Ethernet4/10/1;Ethernet4/11/1;Ethernet4/12/1
+
+ M      0.0.0.0/8 is directly connected, <Internal>
+ B E    10.0.25.6/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                             via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                             via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                             via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.25.14/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.25.18/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.25.20/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.25.70/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.25.78/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.25.82/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.25.84/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.25.134/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.25.142/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.25.146/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.25.148/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.25.198/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.25.206/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.25.210/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.25.212/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.26.0/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                             via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                             via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                             via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.26.2/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                             via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                             via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                             via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.26.18/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.26.20/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.26.64/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.26.66/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.26.82/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.26.84/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.26.128/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.26.130/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.26.146/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.26.148/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.26.192/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.26.194/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.26.210/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.26.212/31 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.40.0/23 [200/0] via 10.10.144.168, Port-Channel1 MWH01-0100-0200-01RA:Ethernet3/1/1;Ethernet3/2/1;Ethernet3/3/1;Ethernet3/4/1;Ethernet3/5/1;Ethernet3/6/1;Ethernet3/7/1;Ethernet3/8/1;Ethernet3/9/1;Ethernet3/10/1;Ethernet3/11/1;Ethernet3/12/1
+                             via 10.10.148.168, Port-Channel13 MWH01-0100-0200-02RA:Ethernet3/13/1;Ethernet3/14/1;Ethernet3/15/1;Ethernet3/16/1;Ethernet3/17/1;Ethernet3/18/1;Ethernet3/19/1;Ethernet3/20/1;Ethernet3/21/1;Ethernet3/22/1;Ethernet3/23/1;Ethernet3/24/1
+                             via 10.10.152.168, Port-Channel25 MWH01-0100-0200-03RA:Ethernet3/25/1;Ethernet3/26/1;Ethernet3/27/1;Ethernet3/28/1;Ethernet3/29/1;Ethernet3/30/1;Ethernet3/31/1;Ethernet3/32/1;Ethernet3/33/1;Ethernet3/34/1;Ethernet3/35/1;Ethernet3/36/1
+                             via 10.10.156.168, Port-Channel37 MWH01-0100-0200-04RA:Ethernet4/1/1;Ethernet4/2/1;Ethernet4/3/1;Ethernet4/4/1;Ethernet4/5/1;Ethernet4/6/1;Ethernet4/7/1;Ethernet4/8/1;Ethernet4/9/1;Ethernet4/10/1;Ethernet4/11/1;Ethernet4/12/1
+ B E    10.0.44.0/23 [200/0] via 10.10.144.168, Port-Channel1 MWH01-0100-0200-01RA:Ethernet3/1/1;Ethernet3/2/1;Ethernet3/3/1;Ethernet3/4/1;Ethernet3/5/1;Ethernet3/6/1;Ethernet3/7/1;Ethernet3/8/1;Ethernet3/9/1;Ethernet3/10/1;Ethernet3/11/1;Ethernet3/12/1
+                             via 10.10.148.168, Port-Channel13 MWH01-0100-0200-02RA:Ethernet3/13/1;Ethernet3/14/1;Ethernet3/15/1;Ethernet3/16/1;Ethernet3/17/1;Ethernet3/18/1;Ethernet3/19/1;Ethernet3/20/1;Ethernet3/21/1;Ethernet3/22/1;Ethernet3/23/1;Ethernet3/24/1
+                             via 10.10.152.168, Port-Channel25 MWH01-0100-0200-03RA:Ethernet3/25/1;Ethernet3/26/1;Ethernet3/27/1;Ethernet3/28/1;Ethernet3/29/1;Ethernet3/30/1;Ethernet3/31/1;Ethernet3/32/1;Ethernet3/33/1;Ethernet3/34/1;Ethernet3/35/1;Ethernet3/36/1
+                             via 10.10.156.168, Port-Channel37 MWH01-0100-0200-04RA:Ethernet4/1/1;Ethernet4/2/1;Ethernet4/3/1;Ethernet4/4/1;Ethernet4/5/1;Ethernet4/6/1;Ethernet4/7/1;Ethernet4/8/1;Ethernet4/9/1;Ethernet4/10/1;Ethernet4/11/1;Ethernet4/12/1
+ B E    10.0.46.0/23 [200/0] via 10.10.144.168, Port-Channel1 MWH01-0100-0200-01RA:Ethernet3/1/1;Ethernet3/2/1;Ethernet3/3/1;Ethernet3/4/1;Ethernet3/5/1;Ethernet3/6/1;Ethernet3/7/1;Ethernet3/8/1;Ethernet3/9/1;Ethernet3/10/1;Ethernet3/11/1;Ethernet3/12/1
+                             via 10.10.148.168, Port-Channel13 MWH01-0100-0200-02RA:Ethernet3/13/1;Ethernet3/14/1;Ethernet3/15/1;Ethernet3/16/1;Ethernet3/17/1;Ethernet3/18/1;Ethernet3/19/1;Ethernet3/20/1;Ethernet3/21/1;Ethernet3/22/1;Ethernet3/23/1;Ethernet3/24/1
+                             via 10.10.152.168, Port-Channel25 MWH01-0100-0200-03RA:Ethernet3/25/1;Ethernet3/26/1;Ethernet3/27/1;Ethernet3/28/1;Ethernet3/29/1;Ethernet3/30/1;Ethernet3/31/1;Ethernet3/32/1;Ethernet3/33/1;Ethernet3/34/1;Ethernet3/35/1;Ethernet3/36/1
+                             via 10.10.156.168, Port-Channel37 MWH01-0100-0200-04RA:Ethernet4/1/1;Ethernet4/2/1;Ethernet4/3/1;Ethernet4/4/1;Ethernet4/5/1;Ethernet4/6/1;Ethernet4/7/1;Ethernet4/8/1;Ethernet4/9/1;Ethernet4/10/1;Ethernet4/11/1;Ethernet4/12/1
+ B E    10.0.67.88/29 [200/0] via 10.10.144.168, Port-Channel1 MWH01-0100-0200-01RA:Ethernet3/1/1;Ethernet3/2/1;Ethernet3/3/1;Ethernet3/4/1;Ethernet3/5/1;Ethernet3/6/1;Ethernet3/7/1;Ethernet3/8/1;Ethernet3/9/1;Ethernet3/10/1;Ethernet3/11/1;Ethernet3/12/1
+                              via 10.10.148.168, Port-Channel13 MWH01-0100-0200-02RA:Ethernet3/13/1;Ethernet3/14/1;Ethernet3/15/1;Ethernet3/16/1;Ethernet3/17/1;Ethernet3/18/1;Ethernet3/19/1;Ethernet3/20/1;Ethernet3/21/1;Ethernet3/22/1;Ethernet3/23/1;Ethernet3/24/1
+                              via 10.10.152.168, Port-Channel25 MWH01-0100-0200-03RA:Ethernet3/25/1;Ethernet3/26/1;Ethernet3/27/1;Ethernet3/28/1;Ethernet3/29/1;Ethernet3/30/1;Ethernet3/31/1;Ethernet3/32/1;Ethernet3/33/1;Ethernet3/34/1;Ethernet3/35/1;Ethernet3/36/1
+                              via 10.10.156.168, Port-Channel37 MWH01-0100-0200-04RA:Ethernet4/1/1;Ethernet4/2/1;Ethernet4/3/1;Ethernet4/4/1;Ethernet4/5/1;Ethernet4/6/1;Ethernet4/7/1;Ethernet4/8/1;Ethernet4/9/1;Ethernet4/10/1;Ethernet4/11/1;Ethernet4/12/1
+ B E    10.0.68.48/28 [200/0] via 10.10.144.168, Port-Channel1 MWH01-0100-0200-01RA:Ethernet3/1/1;Ethernet3/2/1;Ethernet3/3/1;Ethernet3/4/1;Ethernet3/5/1;Ethernet3/6/1;Ethernet3/7/1;Ethernet3/8/1;Ethernet3/9/1;Ethernet3/10/1;Ethernet3/11/1;Ethernet3/12/1
+                              via 10.10.148.168, Port-Channel13 MWH01-0100-0200-02RA:Ethernet3/13/1;Ethernet3/14/1;Ethernet3/15/1;Ethernet3/16/1;Ethernet3/17/1;Ethernet3/18/1;Ethernet3/19/1;Ethernet3/20/1;Ethernet3/21/1;Ethernet3/22/1;Ethernet3/23/1;Ethernet3/24/1
+                              via 10.10.152.168, Port-Channel25 MWH01-0100-0200-03RA:Ethernet3/25/1;Ethernet3/26/1;Ethernet3/27/1;Ethernet3/28/1;Ethernet3/29/1;Ethernet3/30/1;Ethernet3/31/1;Ethernet3/32/1;Ethernet3/33/1;Ethernet3/34/1;Ethernet3/35/1;Ethernet3/36/1
+                              via 10.10.156.168, Port-Channel37 MWH01-0100-0200-04RA:Ethernet4/1/1;Ethernet4/2/1;Ethernet4/3/1;Ethernet4/4/1;Ethernet4/5/1;Ethernet4/6/1;Ethernet4/7/1;Ethernet4/8/1;Ethernet4/9/1;Ethernet4/10/1;Ethernet4/11/1;Ethernet4/12/1
+ B E    10.0.68.64/26 [200/0] via 10.10.144.168, Port-Channel1 MWH01-0100-0200-01RA:Ethernet3/1/1;Ethernet3/2/1;Ethernet3/3/1;Ethernet3/4/1;Ethernet3/5/1;Ethernet3/6/1;Ethernet3/7/1;Ethernet3/8/1;Ethernet3/9/1;Ethernet3/10/1;Ethernet3/11/1;Ethernet3/12/1
+                              via 10.10.148.168, Port-Channel13 MWH01-0100-0200-02RA:Ethernet3/13/1;Ethernet3/14/1;Ethernet3/15/1;Ethernet3/16/1;Ethernet3/17/1;Ethernet3/18/1;Ethernet3/19/1;Ethernet3/20/1;Ethernet3/21/1;Ethernet3/22/1;Ethernet3/23/1;Ethernet3/24/1
+                              via 10.10.152.168, Port-Channel25 MWH01-0100-0200-03RA:Ethernet3/25/1;Ethernet3/26/1;Ethernet3/27/1;Ethernet3/28/1;Ethernet3/29/1;Ethernet3/30/1;Ethernet3/31/1;Ethernet3/32/1;Ethernet3/33/1;Ethernet3/34/1;Ethernet3/35/1;Ethernet3/36/1
+                              via 10.10.156.168, Port-Channel37 MWH01-0100-0200-04RA:Ethernet4/1/1;Ethernet4/2/1;Ethernet4/3/1;Ethernet4/4/1;Ethernet4/5/1;Ethernet4/6/1;Ethernet4/7/1;Ethernet4/8/1;Ethernet4/9/1;Ethernet4/10/1;Ethernet4/11/1;Ethernet4/12/1
+ B E    10.0.97.166/31 [200/0] via 10.10.144.168, Port-Channel1 MWH01-0100-0200-01RA:Ethernet3/1/1;Ethernet3/2/1;Ethernet3/3/1;Ethernet3/4/1;Ethernet3/5/1;Ethernet3/6/1;Ethernet3/7/1;Ethernet3/8/1;Ethernet3/9/1;Ethernet3/10/1;Ethernet3/11/1;Ethernet3/12/1
+                               via 10.10.148.168, Port-Channel13 MWH01-0100-0200-02RA:Ethernet3/13/1;Ethernet3/14/1;Ethernet3/15/1;Ethernet3/16/1;Ethernet3/17/1;Ethernet3/18/1;Ethernet3/19/1;Ethernet3/20/1;Ethernet3/21/1;Ethernet3/22/1;Ethernet3/23/1;Ethernet3/24/1
+                               via 10.10.152.168, Port-Channel25 MWH01-0100-0200-03RA:Ethernet3/25/1;Ethernet3/26/1;Ethernet3/27/1;Ethernet3/28/1;Ethernet3/29/1;Ethernet3/30/1;Ethernet3/31/1;Ethernet3/32/1;Ethernet3/33/1;Ethernet3/34/1;Ethernet3/35/1;Ethernet3/36/1
+                               via 10.10.156.168, Port-Channel37 MWH01-0100-0200-04RA:Ethernet4/1/1;Ethernet4/2/1;Ethernet4/3/1;Ethernet4/4/1;Ethernet4/5/1;Ethernet4/6/1;Ethernet4/7/1;Ethernet4/8/1;Ethernet4/9/1;Ethernet4/10/1;Ethernet4/11/1;Ethernet4/12/1
+ B E    10.0.108.52/32 [200/0] via 10.10.120.105, Port-Channel1053 CO2-0100-0001-01RS:Ethernet4/17/1
+                               via 10.10.120.107, Port-Channel1054 CO2-0100-0001-03RS:Ethernet4/18/1
+                               via 10.10.120.109, Port-Channel1055 CO2-0100-0001-05RS:Ethernet4/19/1
+                               via 10.10.120.111, Port-Channel1056 CO2-0100-0001-07RS:Ethernet4/20/1
+                               via 10.10.120.113, Port-Channel1057 CO2-0100-0002-01RS:Ethernet4/21/1
+                               via 10.10.120.115, Port-Channel1058 CO2-0100-0002-03RS:Ethernet4/22/1
+                               via 10.10.120.117, Port-Channel1059 CO2-0100-0002-05RS:Ethernet4/23/1
+                               via 10.10.120.119, Port-Channel1060 CO2-0100-0002-07RS:Ethernet4/24/1
+ B E    10.0.108.72/32 [200/0] via 10.10.120.105, Port-Channel1053 CO2-0100-0001-01RS:Ethernet4/17/1
+                               via 10.10.120.107, Port-Channel1054 CO2-0100-0001-03RS:Ethernet4/18/1
+                               via 10.10.120.109, Port-Channel1055 CO2-0100-0001-05RS:Ethernet4/19/1
+                               via 10.10.120.111, Port-Channel1056 CO2-0100-0001-07RS:Ethernet4/20/1
+                               via 10.10.120.113, Port-Channel1057 CO2-0100-0002-01RS:Ethernet4/21/1
+                               via 10.10.120.115, Port-Channel1058 CO2-0100-0002-03RS:Ethernet4/22/1
+                               via 10.10.120.117, Port-Channel1059 CO2-0100-0002-05RS:Ethernet4/23/1
+                               via 10.10.120.119, Port-Channel1060 CO2-0100-0002-07RS:Ethernet4/24/1
+ B E    10.0.108.73/32 [200/0] via 10.10.120.105, Port-Channel1053 CO2-0100-0001-01RS:Ethernet4/17/1
+                               via 10.10.120.107, Port-Channel1054 CO2-0100-0001-03RS:Ethernet4/18/1
+                               via 10.10.120.109, Port-Channel1055 CO2-0100-0001-05RS:Ethernet4/19/1
+                               via 10.10.120.111, Port-Channel1056 CO2-0100-0001-07RS:Ethernet4/20/1
+                               via 10.10.120.113, Port-Channel1057 CO2-0100-0002-01RS:Ethernet4/21/1
+                               via 10.10.120.115, Port-Channel1058 CO2-0100-0002-03RS:Ethernet4/22/1
+                               via 10.10.120.117, Port-Channel1059 CO2-0100-0002-05RS:Ethernet4/23/1
+                               via 10.10.120.119, Port-Channel1060 CO2-0100-0002-07RS:Ethernet4/24/1
+ B E    10.0.109.11/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.109.12/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.0/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.1/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.2/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.3/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.4/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.7/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.8/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.9/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                              via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                              via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                              via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.10/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.11/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.12/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.25/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.26/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.27/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.28/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.29/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.30/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.32/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.33/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.34/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.35/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.36/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.37/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.38/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.39/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.40/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.41/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.42/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.43/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.44/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.45/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.46/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.47/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.48/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.49/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.50/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.51/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.52/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.53/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.54/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.55/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.56/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.57/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.58/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.61/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.62/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.63/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.64/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.65/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.66/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.68/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.71/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.72/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.73/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.74/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.75/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.76/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+ B E    10.0.111.77/32 [200/0] via 10.10.120.97, Port-Channel1049 CO1-0100-0001-01RS:Ethernet4/13/1
+                               via 10.10.120.99, Port-Channel1050 CO1-0100-0001-03RS:Ethernet4/14/1
+                               via 10.10.120.101, Port-Channel1051 CO1-0100-0002-01RS:Ethernet4/15/1
+                               via 10.10.120.103, Port-Channel1052 CO1-0100-0002-03RS:Ethernet4/16/1
+
+
+------------- show ip route host -------------
