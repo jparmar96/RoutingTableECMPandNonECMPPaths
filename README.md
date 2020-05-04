@@ -3,7 +3,7 @@
 2. Looks for "show ip route vrf all detail" in the show-tech file.
 4. Segregates ECMP and non-ECMP routes.
 5. Writes the non-ecmp paths to an output file. 
-6. For non-ecmp destinations, if next-hop can be Null0, directly connected or an ip address. (Please advise if I am missing any other type of next-hop here.)
+6. For non-ecmp destinations, next-hop can be Null0, directly connected or an ip address.
 7. The script works with ipv4 routes only.
 
 Structure of output file: 
